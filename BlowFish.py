@@ -1,9 +1,11 @@
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend
+import matplotlib.pyplot as plt
 from Crypto.Cipher import Blowfish
 from Crypto.Util.Padding import pad, unpad
 import base64
 import time
 import tracemalloc
-import matplotlib.pyplot as plt
 import numpy as np
 
 # Function to encrypt plaintext using Blowfish
